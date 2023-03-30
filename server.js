@@ -3,7 +3,7 @@ const express = require('express');
 const port = process.env.PORT || 3000;
 app = express();
 
-mongoose.connect('mongodb://127.0.0.1:2701/Activities')
+mongoose.connect('mongodb+srv://raphael:<123>@cluster0.gmi5hux.mongodb.net/test')
 
 const activityschema = new mongoose.Schema({
     activity: {type: String, required:true}
