@@ -36,7 +36,7 @@
 const mongoose = require('mongoose');
 (express = require('express')), (app = express());
 const port = 3000;
-mongoose.connect('mongodb://127.0.0.1:27017/Activities', {
+mongoose.connect('mongodb+srv://raphael:<123>@cluster0.gmi5hux.mongodb.net/test', {
 useNewUrlParser: true,
 });
 // Create a Schema object
