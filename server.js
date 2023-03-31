@@ -48,7 +48,7 @@ const Activitymodel = mongoose.model('Activity', activitySchema);
 app.get('/', (req, res) => {
 const task1 = new Activitymodel({
 activity: 'activity 1',
-})});
+});
 Activitymodel.insertMany([task1], function (err) {
 if (err) {
 console.log(err);
@@ -57,6 +57,6 @@ console.log('successfully created db');
 // mongoose.connection.close(); }
 };
 res.send(`<h1>Document Added</h1>`);
-});
+})});
 app.listen(port, () => {
 console.log(`Server is running on port: ${port}`)})
