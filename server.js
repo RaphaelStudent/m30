@@ -55,7 +55,7 @@ console.log(err);
 } else {
 console.log('successfully created db');
 // mongoose.connection.close(); }
-});
+};
 res.send(`<h1>Document Added</h1>`);
 });
 app.listen(port, () => {
